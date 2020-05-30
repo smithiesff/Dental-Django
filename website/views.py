@@ -28,3 +28,6 @@ def contact(request):
 	else:
 		# Return a page
 		return render(request, 'contact.html', {})
+
+def photos(request):
+	return render(request, 'photos.html', {})

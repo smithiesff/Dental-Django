@@ -62,7 +62,7 @@
           <nav class="classy-navbar justify-content-between" id="dentoNav">
 
             <!-- Logo -->
-            <a class="nav-brand" href="{% url 'home' %}"><img src="{% static 'website/img/core-img/logo.png/' %}" alt=""></a>
+            <a class="nav-brand" href="{% url 'home' %}"><img src="{% static 'website/img/core-img/logo.PNG/' %}" alt=""></a>
 
             <!-- Navbar Toggler -->
             <div class="classy-navbar-toggler">
@@ -123,7 +123,7 @@
             </div>
 
             <!-- Booking Now Button -->
-            <a href="#" class="btn dento-btn booking-btn">Booking Now</a>
+            <!--<a href="#" class="btn dento-btn booking-btn">Booking Now</a>-->
           </nav>
         </div>
       </div>
@@ -136,18 +136,17 @@
     <!-- Welcome Slides -->
     <div class="welcome-slides owl-carousel">
       <!-- Single Welcome Slide -->
-      <div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax" style="background-image: url({% static 'website/img/bg-img/1.jpg' %});">
+      <div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax" style="background-image: url({% static 'website/img/bg-img/1.JPG' %});">
         <div class="container h-100">
           <div class="row h-100 align-items-center">
             <div class="col-12">
               <!-- Welcome Text -->
               <div class="welcome-text text-center">
-                <h2 data-animation="fadeInUp" data-delay="100ms">My name is Terry Smith and I am the greatet dentist that ever lived!</h2>
-                <p data-animation="fadeInUp" data-delay="300ms">As a leading industry innovator, Dento is opening up exciting new opportunities for dental professionals, investors, employees & suppliers. Contact us to find out what we have to
-                  offer you.</p>
+                <h2 data-animation="fadeInUp" data-delay="100ms">This is a very ambitious project, that will need help from everybody.</h2>
+                <p data-animation="fadeInUp" data-delay="300ms">As a family we have so many memories that have been recorded in print.</p>
                 <div class="welcome-btn-group">
-                  <a href="#" class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="500ms">Get Started</a>
-                  <a href="#" class="btn dento-btn mx-2 active" data-animation="fadeInUp" data-delay="700ms">Contact Us</a>
+                  <a href="{% url 'photos' %}" class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="500ms">Photos</a>
+                  <a href="{% url 'contact' %}" class="btn dento-btn mx-2 active" data-animation="fadeInUp" data-delay="700ms">Contact Me</a>
                 </div>
               </div>
             </div>
@@ -156,7 +155,7 @@
       </div>
       
       <!-- Single Welcome Slide -->
-      <div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax" style="background-image: url({% static 'website/img/bg-img/2.jpg' %});">
+      <div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax" style="background-image: url({% static 'website/img/bg-img/2.JPG' %});">
         <div class="container h-100">
           <div class="row h-100 align-items-center">
             <div class="col-12">
@@ -166,8 +165,8 @@
                 <p data-animation="fadeInDown" data-delay="300ms">As a leading industry innovator, Dento is opening up exciting new opportunities for dental professionals, investors, employees & suppliers. Contact us to find out what we have to
                   offer you.</p>
                 <div class="welcome-btn-group">
-                  <a href="#" class="btn dento-btn mx-2" data-animation="fadeInDown" data-delay="500ms">Get Started</a>
-                  <a href="#" class="btn dento-btn mx-2 active" data-animation="fadeInDown" data-delay="700ms">Contact Us</a>
+                  <a href="{% url 'photos' %}" class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="500ms">Photos</a>
+                  <a href="{% url 'contact' %}" class="btn dento-btn mx-2 active" data-animation="fadeInUp" data-delay="700ms">Contact Me</a>
                 </div>
               </div>
             </div>
@@ -185,7 +184,7 @@
         <!-- About Us Thumbnail -->
         <div class="col-12 col-md-6">
           <div class="about-us-thumbnail mb-50">
-            <img src="{% static 'website/img/bg-img/dental.jpg' %}" alt="">
+            <img src="{% static 'website/img/bg-img/dental.JPG' %}" alt="">
           </div>
         </div>
         <!-- About Content -->
@@ -193,11 +192,10 @@
           <div class="about-us-content mb-50">
             <!-- Section Heading -->
             <div class="section-heading">
-              <h2>About Us</h2>
+              <h2>Mum & Dad</h2>
               <div class="line"></div>
             </div>
-            <p>Vestibulum condimentum, risus sedones honcus rutrum, salah lacus mollis zurna, nec finibusmi velit advertisis. Proin vitae odin quis magna aliquet laciniae. Etiam auctor, nisi vel. Pellentesque ultrices nisl quam iaculis, nec pulvinar
-              augue.</p>
+            <p>You could say the photo project starts with this photo… even though Granny Doris had countless photos from her teen years and uncle Eunan had many snaps from the late 50’s and early 60’s.</p>
 
             <!-- Single Skills Area -->
             <div class="single-skills-area mt-30">
@@ -243,36 +241,40 @@
         <!-- Cool Facts Area -->
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="single-cta text-center mt-50 mb-100">
-            <i class="icon_genius"></i>
-            <h2><span class="counter">20</span></h2>
-            <h5>Years Of Experience</h5>
+            <!--<i class="icon_genius"></i>-->
+            <img src="{% static 'website/img/core-img/parents.PNG' %}" alt="">
+            <h2><span class="counter">2</span></h2>
+            <h5>Parents</h5>
           </div>
         </div>
 
         <!-- Cool Facts Area -->
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="single-cta text-center mt-50 mb-100">
-            <i class="icon_heart_alt"></i>
-            <h2><span class="counter">700</span>+</h2>
-            <h5>Happy Patients</h5>
+            <!--<i class="icon_heart_alt"></i>-->
+            <img src="{% static 'website/img/core-img/kids.PNG' %}" alt="">
+            <h2><span class="counter">5</span></h2>
+            <h5>Kids</h5>
           </div>
         </div>
 
         <!-- Cool Facts Area -->
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="single-cta text-center mt-50 mb-100">
-            <i class="icon_book_alt"></i>
-            <h2><span class="counter">120</span></h2>
-            <h5>Certificate</h5>
+            <!--<i class="icon_book_alt"></i>-->
+            <img src="{% static 'website/img/core-img/grandkids.PNG' %}" alt="">
+            <h2><span class="counter">6</span></h2>
+            <h5>Grandchildren</h5>
           </div>
         </div>
 
         <!-- Cool Facts Area -->
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="single-cta text-center mt-50 mb-100">
-            <i class="icon_id"></i>
-            <h2><span class="counter">40</span>+</h2>
-            <h5>Dentist</h5>
+            <!--<i class="icon_id"></i>-->
+            <img src="{% static 'website/img/core-img/photo.PNG' %}" alt="">
+            <h2><span class="counter">2000</span>+</h2>
+            <h5>Photos...</h5>
           </div>
         </div>
       </div>
@@ -281,7 +283,7 @@
   <!-- Cool Facts Area End -->
 
   <!-- Dento Service Area Start -->
-  <section class="dento-service-area section-padding-100-0 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url({% static 'website/img/bg-img/13.jpg' %});">
+  <section class="dento-service-area section-padding-100-0 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url({% static 'website/img/bg-img/13.JPG' %});">
     <div class="container">
       <div class="row align-items-center">
         <!-- Service Content -->
@@ -348,7 +350,8 @@
         <!-- Video Area -->
         <div class="col-12 col-lg-6">
           <div class="dento-video-area mb-100">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/l0-sgoIUviQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/l0-sgoIUviQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+            <video controls="controls" muted Autoplay=autoplay name="Meabh & Granny" style="border-radius:40px" height="400" src="{% static 'website/img/movie/Meabh.MOV' %}"></video>
           </div>
         </div>
       </div>
@@ -447,7 +450,7 @@
   <!-- Dento Pricing Table Area End -->
 
   <!-- Book An Oppointment Area Start -->
-  <section class="book-an-oppointment-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
+  <section class="book-an-oppointment-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url({% static 'website/img/bg-img/12.JPG' %});">
     <div class="container">
       <div class="row">
         <!-- Section Heading -->
@@ -606,7 +609,7 @@
   <!-- ***** Dento Dentist Area End ***** -->
 
   <!-- ***** Testimonials Area Start ***** -->
-  <section class="testimonials-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url({% static 'website/img/bg-img/7.jpg' %});">
+  <section class="testimonials-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url({% static 'website/img/bg-img/7.JPG' %});">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -736,18 +739,19 @@
   <!-- ***** Blog Area End ***** -->
 
   <!-- ***** Footer Area Start ***** -->
-  <footer class="footer-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/3.jpg' %});">
+  <footer class="footer-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/3.JPG' %});">
     <div class="container">
       <div class="row">
         <!-- Single Footer Widget -->
         <div class="col-12 col-sm-6 col-lg-4">
           <div class="single-footer-widget">
-            <a href="{% url 'home' %}" class="d-block mb-4"><img src="{% static 'website/img/core-img/logo.png/' %}" alt=""></a>
-            <p>Etiam sutor risus, dapibus act elefend katen, lacinia sitamet denim. Mauris sagittis kansa interdum dignissim.</p>
+            <a href="{% url 'home' %}" class="d-block mb-4"><img src="{% static 'website/img/core-img/logo.PNG/' %}" alt=""></a>
+            <p>This website was coded using Django, Python, HTML, CSS and SQLite.</p>
+            <p>This is an original code but is available to download.</p>
             <div class="footer-contact">
-              <p><i class="icon_pin"></i> 28 Jackson Street, Chicago, 7788569 USA</p>
-              <p><i class="icon_phone"></i> +84. 2252. 2250. 122</p>
-              <p><i class="icon_mail"></i> info.dento@gmail.com</p>
+              <p><i class="icon_pin"></i>&emsp;39 Retreat Park,<br> &emsp;&emsp;Athlone,<br> &emsp;&emsp;Westmeath,<br> &emsp;&emsp;N37 F5N8</p>
+              <p><i class="icon_phone"></i> +353 86 311 4761</p>
+              <p><i class="icon_mail"></i> smithie_ie@yahoo.com.com</p>
             </div>
           </div>
         </div>
@@ -826,9 +830,18 @@
       <div class="row">
         <div class="col-12">
           <div class="copywrite-content">
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            <p>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              <!--Copyright &copy;-->
+              <!--<script>
+                document.write(new Date().getFullYear());
+              </script>--> 
+              <!--All rights reserved | This template is made with--> 
+              <!--<i class="fa fa-heart-o" aria-hidden="true"></i>--> 
+              <!--by -->
+              <a href="https://colorlib.com" target="_blank">.</a>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
           </div>
         </div>
       </div>
