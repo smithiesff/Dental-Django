@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Dr. Terry Smith DMD</title>
+  <title>Smith Family Album</title>
 
   <!-- Favicon -->
   <link rel="icon" href="{% static 'website/img/core-img/favicon.ico' %}">
@@ -81,41 +81,47 @@
               <div class="classynav">
                 <ul id="nav">
                   <li><a href="{% url 'home' %}">Home</a></li>
-                  <li><a href="#">Pages</a>
+                  <li><a href="#">Photos</a>
                     <ul class="dropdown">
-                      <li><a href="{% url 'home' %}">- Home</a></li>
-                      <li><a href="about.html">- About Us</a></li>
-                      <li><a href="service.html">- Service</a></li>
-                      <li><a href="pricing.html">- Pricing</a></li>
-                      <li><a href="blog.html">- Blog</a></li>
-                      <li><a href="blog-details.html">- Blog Details</a></li>
-                      <li><a href="contact.html">- Contact</a></li>
-                      <li><a href="#">- Dropdown</a>
+                      <li><a href="{% url 'home' %}">- Family</a></li>
+                      <li><a href="{% url 'photos' %}">- Holidays</a></li>
+                      <li><a href="{% url 'photos' %}">- Christmas</a></li>
+                      <li><a href="{% url 'photos' %}">- Donegal</a></li>
+                      <li><a href="{% url 'photos' %}">- Random</a></li>
+                      <li><a href="{% url 'photos' %}">- Old Photos</a></li>
+                      <li><a href="{% url 'photos' %}">- Newspaper Clippings</a></li>
+                      <li><a href="{% url 'photos' %}">- Grandkids</a>
                         <ul class="dropdown">
-                          <li><a href="#">- Dropdown Item</a></li>
-                          <li><a href="#">- Dropdown Item</a>
-                            <ul class="dropdown">
-                              <li><a href="#">- Even Dropdown</a></li>
-                              <li><a href="#">- Even Dropdown</a></li>
-                              <li><a href="#">- Even Dropdown</a></li>
-                              <li><a href="#">- Even Dropdown</a></li>
-                            </ul>
-                          </li>
-                          <li><a href="#">- Dropdown Item</a></li>
-                          <li><a href="#">- Dropdown Item</a></li>
+                          <li><a href="{% url 'photos' %}">- Nathan</a></li>
+                          <li><a href="{% url 'photos' %}">- Rachel</a></li>
+                          <li><a href="{% url 'photos' %}">- Meabh</a></li>
+                          <li><a href="{% url 'photos' %}">- Patrick</a></li>
+                          <li><a href="{% url 'photos' %}">- Alfie</a></li>
+                          <li><a href="{% url 'photos' %}">- Millie</a></li>
+
+                          <!--<li><a href="#">- Dropdown Item</a>-->
+                            <!--<ul class="dropdown">-->
+                              <!--<li><a href="#">- Even Dropdown</a></li>-->
+                              <!--<li><a href="#">- Even Dropdown</a></li>-->
+                              <!--<li><a href="#">- Even Dropdown</a></li>-->
+                              <!--<li><a href="#">- Even Dropdown</a></li>-->
+                            <!--</ul>-->
+                          <!--</li>-->
+                          <!--<li><a href="#">- Dropdown Item</a></li>-->
+                          <!--<li><a href="#">- Dropdown Item</a></li>-->
                         </ul>
                       </li>
                     </ul>
                   </li>
                   <li><a href="about.html">About</a></li>
-                  <li><a href="service.html">Service</a></li>
-                  <li><a href="pricing.html">Pricing</a></li>
-                  <li><a href="#">Blog</a>
-                    <ul class="dropdown">
-                      <li><a href="blog.html">- Blog</a></li>
-                      <li><a href="blog-details.html">- Blog Details</a></li>
-                    </ul>
-                  </li>
+                  <li><a href="service.html">Home Movies</a></li>
+                  <li><a href="pricing.html">Stories</a></li>
+                  <!--<li><a href="#">Blog</a>-->
+                    <!--<ul class="dropdown">-->
+                      <!--<li><a href="blog.html">- Blog</a></li>-->
+                      <!--<li><a href="blog-details.html">- Blog Details</a></li>-->
+                    <!--</ul>-->
+                  <!--</li>-->
                   <li><a href="./contact.html">Contact</a></li>
                 </ul>
               </div>
@@ -142,8 +148,8 @@
             <div class="col-12">
               <!-- Welcome Text -->
               <div class="welcome-text text-center">
-                <h2 data-animation="fadeInUp" data-delay="100ms">This is a very ambitious project, that will need help from everybody.</h2>
-                <p data-animation="fadeInUp" data-delay="300ms">As a family we have so many memories that have been recorded in print.</p>
+                <h2 data-animation="fadeInUp" data-delay="100ms">The Family Project</h2>
+                <p data-animation="fadeInUp" data-delay="300ms">This is a very ambitious project, that will need help from everybody. As a family we have so many memories that have been recorded in print.</p>
                 <div class="welcome-btn-group">
                   <a href="{% url 'photos' %}" class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="500ms">Photos</a>
                   <a href="{% url 'contact' %}" class="btn dento-btn mx-2 active" data-animation="fadeInUp" data-delay="700ms">Contact Me</a>
@@ -161,9 +167,8 @@
             <div class="col-12">
               <!-- Welcome Text -->
               <div class="welcome-text text-center">
-                <h2 data-animation="fadeInDown" data-delay="100ms">We Believe Everyone Should Have Easy Access To Great Dental Care</h2>
-                <p data-animation="fadeInDown" data-delay="300ms">As a leading industry innovator, Dento is opening up exciting new opportunities for dental professionals, investors, employees & suppliers. Contact us to find out what we have to
-                  offer you.</p>
+                <h2 data-animation="fadeInDown" data-delay="100ms">Our Living History</h2>
+                <p data-animation="fadeInDown" data-delay="300ms">This, hopefully, will result in a definitive collection of our family photos. We need to come together and label each of these photos with a name and a date for each.</p>
                 <div class="welcome-btn-group">
                   <a href="{% url 'photos' %}" class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="500ms">Photos</a>
                   <a href="{% url 'contact' %}" class="btn dento-btn mx-2 active" data-animation="fadeInUp" data-delay="700ms">Contact Me</a>
@@ -196,33 +201,34 @@
               <div class="line"></div>
             </div>
             <p>You could say the photo project starts with this photo… even though Granny Doris had countless photos from her teen years and uncle Eunan had many snaps from the late 50’s and early 60’s.</p>
+            <p>But as the years went by the stack of photos that we have collected has turned in to a mixed up mess, that is represented in the number of photo folders labelled “random”</p>
 
             <!-- Single Skills Area -->
-            <div class="single-skills-area mt-30">
-              <h6>Experience Dentist</h6>
-              <div id="bar1" class="barfiller">
-                <span class="tip"></span>
-                <span class="fill" data-percentage="80"></span>
-              </div>
-            </div>
+            <!--<div class="single-skills-area mt-30"> -->
+              <!--<h6>Experience Dentist</h6> -->
+              <!--<div id="bar1" class="barfiller"> -->
+                <!--<span class="tip"></span> -->
+                <!--<span class="fill" data-percentage="80"></span> -->
+              <!--</div> -->
+            <!--</div> -->
 
             <!-- Single Skills Area -->
-            <div class="single-skills-area mt-30">
-              <h6>Modern Equipment</h6>
-              <div id="bar2" class="barfiller">
-                <span class="tip"></span>
-                <span class="fill" data-percentage="65"></span>
-              </div>
-            </div>
+            <!--<div class="single-skills-area mt-30"> -->
+              <!--<h6>Modern Equipment</h6> -->
+              <!--<div id="bar2" class="barfiller"> -->
+                <!--<span class="tip"></span> -->
+                <!--<span class="fill" data-percentage="65"></span> -->
+              <!--</div> -->
+            <!--</div> -->
 
             <!-- Single Skills Area -->
-            <div class="single-skills-area mt-30">
-              <h6>Friendly Staff</h6>
-              <div id="bar3" class="barfiller">
-                <span class="tip"></span>
-                <span class="fill" data-percentage="85"></span>
-              </div>
-            </div>
+            <!--<div class="single-skills-area mt-30"> -->
+              <!--<h6>Friendly Staff</h6> -->
+              <!--<div id="bar3" class="barfiller"> -->
+                <!--<span class="tip"></span> -->
+                <!--<span class="fill" data-percentage="85"></span> -->
+              <!--</div> -->
+            <!--</div> -->
           </div>
         </div>
       </div>
@@ -291,7 +297,7 @@
           <div class="service-content mb-30">
             <!-- Section Heading -->
             <div class="section-heading white">
-              <h2>Our Services</h2>
+              <h2><center>Whats On This Site</center></h2>
               <div class="line"></div>
             </div>
 
@@ -299,48 +305,48 @@
               <!-- Single Service -->
               <div class="col-6 col-md-4">
                 <div class="single-service mb-70">
-                  <img src="{% static 'website/img/core-img/s1.png/' %}" alt="">
-                  <h6>Teeth Whitening</h6>
+                  <!--<img src="{% static 'website/img/core-img/s1.png/' %}" alt="">-->
+                  <h6><center>Old Photos</center></h6>
                 </div>
               </div>
 
               <!-- Single Service -->
               <div class="col-6 col-md-4">
                 <div class="single-service mb-70">
-                  <img src="{% static 'website/img/core-img/s2.png/' %}" alt="">
-                  <h6>Missing Teeth</h6>
+                  <!--<img src="{% static 'website/img/core-img/s2.png/' %}" alt="">-->
+                  <h6><center>Digital Photos</center></h6>
                 </div>
               </div>
 
               <!-- Single Service -->
               <div class="col-6 col-md-4">
                 <div class="single-service mb-70">
-                  <img src="{% static 'website/img/core-img/s3.png/' %}" alt="">
-                  <h6>Teeth Whitening</h6>
+                  <!--<img src="{% static 'website/img/core-img/s3.png/' %}" alt="">-->
+                  <h6><center>Newspaper Clippings</center></h6>
                 </div>
               </div>
 
               <!-- Single Service -->
               <div class="col-6 col-md-4">
                 <div class="single-service mb-70">
-                  <img src="{% static 'website/img/core-img/s4.png/' %}" alt="">
-                  <h6>Cosmetic Dentistry</h6>
+                  <!--<img src="{% static 'website/img/core-img/s4.png/' %}" alt="">-->
+                  <h6><center>Home Movies</center></h6>
                 </div>
               </div>
 
               <!-- Single Service -->
               <div class="col-6 col-md-4">
                 <div class="single-service mb-70">
-                  <img src="{% static 'website/img/core-img/s5.png/' %}" alt="">
-                  <h6>Examination</h6>
+                  <!--<img src="{% static 'website/img/core-img/s5.png/' %}" alt="">-->
+                  <h6><center>Family Stories</center></h6>
                 </div>
               </div>
 
               <!-- Single Service -->
               <div class="col-6 col-md-4">
                 <div class="single-service mb-70">
-                  <img src="{% static 'website/img/core-img/s1.png/' %}" alt="">
-                  <h6>Teeth Pain</h6>
+                  <!--<img src="{% static 'website/img/core-img/s1.png/' %}" alt="">-->
+                  <h6><center>Other...</center></h6>
                 </div>
               </div>
             </div>
@@ -366,7 +372,7 @@
         <!-- Section Heading -->
         <div class="col-12">
           <div class="section-heading text-center">
-            <h2>Pricing</h2>
+            <h2>I Don't Know What To Put Here</h2>
             <div class="line"></div>
           </div>
         </div>
@@ -378,61 +384,61 @@
             <table class="table table-borderless mb-0">
               <thead>
                 <tr>
-                  <th scope="col">Service Names</th>
-                  <th scope="col">Stage</th>
-                  <th scope="col">Price</th>
+                  <th scope="col">Blah</th>
+                  <th scope="col">Blah</th>
+                  <th scope="col">Blah</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">Teeth Whitening Service at home</th>
-                  <td>1 times</td>
-                  <td>$115.00</td>
+                  <th scope="row">Blah</th>
+                  <td>Blah</td>
+                  <td>Blah</td>
                 </tr>
                 <tr>
-                  <th scope="row">Teeth Whitening Service at Dental Clinic</th>
-                  <td>1 times</td>
-                  <td>$100.00</td>
+                  <th scope="row">Blah</th>
+                  <td>Blah</td>
+                  <td>Blah</td>
                 </tr>
                 <tr>
-                  <th scope="row">Ceramic crowns and fillings Dental porcelain</th>
-                  <td>1 times</td>
-                  <td>$99.00</td>
+                  <th scope="row">Blah</th>
+                  <td>Blah</td>
+                  <td>Blah</td>
                 </tr>
                 <tr>
-                  <th scope="row">Remove crowns, bridges Service</th>
-                  <td>1 tooth</td>
-                  <td>$50.00</td>
+                  <th scope="row">Blah</th>
+                  <td>Blah</td>
+                  <td>Blah</td>
                 </tr>
                 <tr>
-                  <th scope="row">Covering the recession of the gums</th>
-                  <td>1 times</td>
-                  <td>$400.00</td>
+                  <th scope="row">Blah</th>
+                  <td>Blah</td>
+                  <td>Blah</td>
                 </tr>
                 <tr>
-                  <th scope="row">Consultation, impressions and preparation of models</th>
-                  <td>1 times</td>
-                  <td>$35.00</td>
+                  <th scope="row">Blah</th>
+                  <td>Blah</td>
+                  <td>Blah</td>
                 </tr>
                 <tr>
-                  <th scope="row">Removal of an old inlay, old crown</th>
-                  <td>1 times</td>
-                  <td>$99.00</td>
+                  <th scope="row">Blah</th>
+                  <td>Blah</td>
+                  <td>Blah</td>
                 </tr>
                 <tr>
-                  <th scope="row">Overlay teeth whitening ( 2 arches)</th>
-                  <td>1 times</td>
-                  <td>$170.00</td>
+                  <th scope="row">Blah</th>
+                  <td>Blah</td>
+                  <td>Blah</td>
                 </tr>
                 <tr>
-                  <th scope="row">Standard porcelain and zirconium crown on implant</th>
-                  <td>1 tooth</td>
-                  <td>$499.00</td>
+                  <th scope="row">Blah</th>
+                  <td>Blah</td>
+                  <td>Blah</td>
                 </tr>
                 <tr>
-                  <th scope="row">Implantation of an implant (price depends on system used)</th>
-                  <td>1 tooth</td>
-                  <td>$600.00</td>
+                  <th scope="row">Blah</th>
+                  <td>Blah</td>
+                  <td>Blah</td>
                 </tr>
               </tbody>
             </table>
@@ -456,7 +462,7 @@
         <!-- Section Heading -->
         <div class="col-12">
           <div class="section-heading text-center white">
-            <h2>Book An Apointment</h2>
+            <h2>Message Me</h2>
             <div class="line"></div>
           </div>
         </div>
@@ -491,22 +497,22 @@
                 <div class="col-md-6">
                   <div class="form-group mb-30">
                     <select name="your-scheldule" class="form-control">
-                      <option value="Choose Your Scheldule">Choose Your Scheldule</option>
-                      <option value="9 AM to 10 AM">9 AM to 10 AM</option>
-                      <option value="11 AM to 12 PM">11 AM to 12 PM</option>
-                      <option value="2 PM to 4 PM">2 PM to 4 PM</option>
-                      <option value="8 PM to 10 PM">8 PM to 10 PM</option>
+                      <option value="Choose Your Scheldule"></option>
+                      <option value="9 AM to 10 AM"></option>
+                      <option value="11 AM to 12 PM"></option>
+                      <option value="2 PM to 4 PM"></option>
+                      <option value="8 PM to 10 PM"></option>
                     </select>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group mb-30">
                     <select name="your-time" class="form-control">
-                      <option value="Choose Your Time">Choose Your Scheldule</option>
-                      <option value="9 AM to 10 AM">9 AM to 10 AM</option>
-                      <option value="11 AM to 12 PM">11 AM to 12 PM</option>
-                      <option value="2 PM to 4 PM">2 PM to 4 PM</option>
-                      <option value="8 PM to 10 PM">8 PM to 10 PM</option>
+                      <option value="Choose Your Time"></option>
+                      <option value="9 AM to 10 AM"></option>
+                      <option value="11 AM to 12 PM"></option>
+                      <option value="2 PM to 4 PM"></option>
+                      <option value="8 PM to 10 PM"></option>
                     </select>
                   </div>
                 </div>
@@ -516,7 +522,7 @@
                   </div>
                 </div>
                 <div class="col-12 text-center">
-                  <button type="submit" class="btn dento-btn">Booking Now</button>
+                  <button type="submit" class="btn dento-btn">Blah</button>
                 </div>
               </div>
             </form>
@@ -534,7 +540,7 @@
         <!-- Section Heading -->
         <div class="col-12">
           <div class="section-heading text-center">
-            <h2>Our Dentist</h2>
+            <h2>Our Family</h2>
             <div class="line"></div>
           </div>
         </div>
@@ -544,19 +550,19 @@
         <!-- Single Dentist Area -->
         <div class="col-12 col-sm-6 col-md-4">
           <div class="single-dentist-area mb-100">
-            <img src="{% static 'website/img/bg-img/9.png/' %}" alt="">
+            <img src="{% static 'website/img/cover-img/Granny1.JPG/' %}" alt="">
             <!-- Dentist Content -->
             <div class="dentist-content">
               <!-- Social Info -->
               <div class="dentist-social-info">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <!--<a href="#"><i class="fa fa-facebook"></i></a>-->
+                <!--<a href="#"><i class="fa fa-twitter"></i></a>-->
+                <!--<a href="#"><i class="fa fa-google-plus"></i></a>-->
               </div>
               <!-- Dentist Info -->
               <div class="dentist-info bg-gradient-overlay">
-                <h5>Michael Barley</h5>
-                <p>Implant Expert</p>
+                <h5>Patricia Smith</h5>
+                <p>Granny</p>
               </div>
             </div>
           </div>
@@ -565,19 +571,19 @@
         <!-- Single Dentist Area -->
         <div class="col-12 col-sm-6 col-md-4">
           <div class="single-dentist-area mb-100">
-            <img src="{% static 'website/img/bg-img/10.png/' %}" alt="">
+            <img src="{% static 'website/img/cover-img/Grandad1.jpg/' %}" alt="">
             <!-- Dentist Content -->
             <div class="dentist-content">
               <!-- Social Info -->
               <div class="dentist-social-info">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <!--<a href="#"><i class="fa fa-facebook"></i></a>-->
+                <!--<a href="#"><i class="fa fa-twitter"></i></a>-->
+                <!--<a href="#"><i class="fa fa-google-plus"></i></a>-->
               </div>
               <!-- Dentist Info -->
               <div class="dentist-info bg-gradient-overlay">
-                <h5>Michael Barley</h5>
-                <p>Implant Expert</p>
+                <h5>Terry Smith</h5>
+                <p>Grandad</p>
               </div>
             </div>
           </div>
@@ -586,19 +592,19 @@
         <!-- Single Dentist Area -->
         <div class="col-12 col-sm-6 col-md-4">
           <div class="single-dentist-area mb-100">
-            <img src="{% static 'website/img/bg-img/11.png/' %}" alt="">
+            <img src="{% static 'website/img/cover-img/Fiona1.JPG/' %}" alt="">
             <!-- Dentist Content -->
             <div class="dentist-content">
               <!-- Social Info -->
               <div class="dentist-social-info">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <!--<a href="#"><i class="fa fa-facebook"></i></a>-->
+                <!--<a href="#"><i class="fa fa-twitter"></i></a>-->
+                <!--<a href="#"><i class="fa fa-google-plus"></i></a>-->
               </div>
               <!-- Dentist Info -->
               <div class="dentist-info bg-gradient-overlay">
-                <h5>Michael Barley</h5>
-                <p>Implant Expert</p>
+                <h5>Fiona Carswel</h5>
+                <p> </p>
               </div>
             </div>
           </div>
@@ -612,6 +618,75 @@
   <section class="testimonials-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url({% static 'website/img/bg-img/7.JPG' %});">
     <div class="container">
       <div class="row">
+        <!-- Single Dentist Area -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="single-dentist-area mb-100">
+            <img src="{% static 'website/img/cover-img/Philip1.JPG/' %}" alt="">
+            <!-- Dentist Content -->
+            <div class="dentist-content">
+              <!-- Social Info -->
+              <div class="dentist-social-info">
+                <!--<a href="#"><i class="fa fa-facebook"></i></a>-->
+                <!--<a href="#"><i class="fa fa-twitter"></i></a>-->
+                <!--<a href="#"><i class="fa fa-google-plus"></i></a>-->
+              </div>
+              <!-- Dentist Info -->
+              <div class="dentist-info bg-gradient-overlay">
+                <h5>Philip Smith</h5>
+                <p> </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Dentist Area -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="single-dentist-area mb-100">
+            <img src="{% static 'website/img/cover-img/Michael1.JPG/' %}" alt="">
+            <!-- Dentist Content -->
+            <div class="dentist-content">
+              <!-- Social Info -->
+              <div class="dentist-social-info">
+                <!--<a href="#"><i class="fa fa-facebook"></i></a>-->
+                <!--<a href="#"><i class="fa fa-twitter"></i></a>-->
+                <!--<a href="#"><i class="fa fa-google-plus"></i></a>-->
+              </div>
+              <!-- Dentist Info -->
+              <div class="dentist-info bg-gradient-overlay">
+                <h5>Michael Smith</h5>
+                <p> </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Dentist Area -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="single-dentist-area mb-100">
+            <img src="{% static 'website/img/cover-img/Jill1.jpg/' %}" alt="">
+            <!-- Dentist Content -->
+            <div class="dentist-content">
+              <!-- Social Info -->
+              <div class="dentist-social-info">
+                <!--<a href="#"><i class="fa fa-facebook"></i></a>-->
+                <!--<a href="#"><i class="fa fa-twitter"></i></a>-->
+                <!--<a href="#"><i class="fa fa-google-plus"></i></a>-->
+              </div>
+              <!-- Dentist Info -->
+              <div class="dentist-info bg-gradient-overlay">
+                <h5>Jill Rodger</h5>
+                <p> </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="row">
         <div class="col-12">
           <!-- Testimonials Slides -->
           <div class="testimonials-slides owl-carousel">
@@ -619,14 +694,14 @@
             <div class="single-testimonial-slide d-flex align-items-center">
               <!-- Thumbnail -->
               <div class="testimonial-thumb">
-                <img src="{% static 'website/img/bg-img/8.jpg' %}" alt="">
+                <!--<img src="{% static 'website/img/bg-img/8.jpg' %}" alt="">-->
               </div>
               <!-- Content -->
               <div class="testimonial-content">
-                <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
-                  very helpful. Excellent treatment and advice.”</h5>
-                <h6>Arron Ramsey</h6>
-                <p>Dental Patient</p>
+                <!--<h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
+                  very helpful. Excellent treatment and advice.”</h5>-->
+                <!--<h6>Arron Ramsey</h6>-->
+                <!--<p>Dental Patient</p>-->
               </div>
             </div>
 
@@ -634,14 +709,14 @@
             <div class="single-testimonial-slide d-flex align-items-center">
               <!-- Thumbnail -->
               <div class="testimonial-thumb">
-                <img src="{% static 'website/img/bg-img/8.jpg' %}" alt="">
+                <!--<img src="{% static 'website/img/bg-img/8.jpg' %}" alt="">-->
               </div>
               <!-- Content -->
               <div class="testimonial-content">
-                <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
-                  very helpful. Excellent treatment and advice.”</h5>
-                <h6>Arron Ramsey</h6>
-                <p>Dental Patient</p>
+                <!--<h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
+                  very helpful. Excellent treatment and advice.”</h5>-->
+                <!--<h6>Arron Ramsey</h6>-->
+                <!--<p>Dental Patient</p>-->
               </div>
             </div>
 
@@ -649,14 +724,14 @@
             <div class="single-testimonial-slide d-flex align-items-center">
               <!-- Thumbnail -->
               <div class="testimonial-thumb">
-                <img src="{% static 'website/img/bg-img/8.jpg' %}" alt="">
+                <!--<img src="{% static 'website/img/bg-img/8.jpg' %}" alt="">-->
               </div>
               <!-- Content -->
               <div class="testimonial-content">
-                <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
-                  very helpful. Excellent treatment and advice.”</h5>
-                <h6>Arron Ramsey</h6>
-                <p>Dental Patient</p>
+                <!--<h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
+                  very helpful. Excellent treatment and advice.”</h5>-->
+                <!--<h6>Arron Ramsey</h6>-->
+                <!--<p>Dental Patient</p>-->
               </div>
             </div>
           </div>
@@ -688,8 +763,8 @@
             </a>
             <!-- Blog Content -->
             <div class="blog-content">
-              <a href="./blog-details.html" class="post-title">How your mouth bacteria can harm your lungs</a>
-              <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam ...</p>
+              <a href="./blog-details.html" class="post-title">Terry Is Great</a>
+              <p>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah </p>
               <div class="post-meta">
                 <a href="#"><i class="icon_clock_alt"></i> 28 Sep 2018</a>
                 <a href="#"><i class="icon_chat_alt"></i> 3 Comments</a>
@@ -706,8 +781,8 @@
             </a>
             <!-- Blog Content -->
             <div class="blog-content">
-              <a href="./blog-details.html" class="post-title">What is the best kind of toothpaste to use?</a>
-              <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam ...</p>
+              <a href="./blog-details.html" class="post-title">Is This The Best Website Ever?</a>
+              <p>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah </p>
               <div class="post-meta">
                 <a href="#"><i class="icon_clock_alt"></i> 28 Sep 2018</a>
                 <a href="#"><i class="icon_chat_alt"></i> 3 Comments</a>
@@ -724,8 +799,8 @@
             </a>
             <!-- Blog Content -->
             <div class="blog-content">
-              <a href="./blog-details.html" class="post-title">Why you should avoid sipping your drinks</a>
-              <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam ...</p>
+              <a href="./blog-details.html" class="post-title">Family Photos Are Great</a>
+              <p>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah </p>
               <div class="post-meta">
                 <a href="#"><i class="icon_clock_alt"></i> 28 Sep 2018</a>
                 <a href="#"><i class="icon_chat_alt"></i> 3 Comments</a>
